@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Results</h1>
+        <div class="result">
+            <div class="result-title">Depression</div>
+            <div class="result-info">
+                <p>Level: {{ result[0][0] }}</p>
+                <p>Questions asked: {{ result[0][1] }}</p>
+                <p>Decision Depth: {{ result[0][2] }}</p>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-title">Anxiety</div>
+            <div class="result-info">
+                <p>Level: {{ result[1][0] }}</p>
+                <p>Questions asked: {{ result[1][1] }}</p>
+                <p>Decision Depth: {{ result[1][2] }}</p>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-title">Stress</div>
+            <div class="result-info">
+                <p>Level: {{ result[2][0] }}</p>
+                <p>Questions asked: {{ result[2][1] }}</p>
+                <p>Decision Depth: {{ result[2][2] }}</p>
+            </div>
+        </div>
+    </div>
+    <a href="/" class="start-button">Home</a>
+</body>
+</html>
