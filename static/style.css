@@ -110,3 +110,21 @@ button[type="submit"]:hover {
 .result-info {
     margin-left: 20px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+footer a {
+    text-decoration: none; 
+    color: inherit; 
+    cursor: pointer; 
+}
